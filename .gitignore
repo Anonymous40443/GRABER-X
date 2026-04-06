@@ -1,0 +1,4 @@
+*.txt
+logs/
+cf_log.txt
+logs_graber_x.txt
