@@ -1,25 +1,15 @@
 # 🦅 GRABER-X v12.7 - LEVIATHAN PROTOCOL
 
-![GRABER-X Banner](https://img.shields.io/badge/SECURITY-AUDIT-red?style=for-the-badge&logo=kali-linux)
+![Security](https://img.shields.io/badge/SECURITY-AUDIT-red?style=for-the-badge&logo=kali-linux)
 ![Status](https://img.shields.io/badge/STATUS-ACTIVE-brightgreen?style=for-the-badge)
 
-**GRABER-X** é uma estrutura avançada de Engenharia Social e Reconhecimento de Rede projetada para testes de penetração em ambientes laboratoriais. A ferramenta automatiza a criação de túneis seguros e iscas psicológicas para captura de metadados, geolocalização precisa e identificação de dispositivos.
-
----
-
-## 🛠️ O QUE HÁ DE NOVO NA v12.7?
-
-* **[NEW] Isca 05:** Otimizador de busca de conteúdo (Engenharia Social refinada).
-* **[FIX] Cloudflare Stable:** Lógica de delay integrada para evitar erros de conexão no primeiro acesso.
-* **[DEV] Device ID:** Identificação automática do modelo do smartphone/PC (User-Agent Parsing).
-* **[UI] Purple Spinner:** Interface de carregamento moderna e limpa.
-* **[URL] Ultra Masking:** Sistema de camuflagem de links integrado antes da geração.
+**GRABER-X** é uma estrutura avançada de Engenharia Social e Reconhecimento de Rede. A ferramenta automatiza a criação de túneis seguros e iscas psicológicas para captura de metadados, geolocalização e identificação de dispositivos.
 
 ---
 
 ## 🔐 ACESSO & LICENÇA
 
-O sistema opera sob criptografia de ponta. O acesso ao painel principal é restrito via **IDENTIFICATION TOKEN**.
+O sistema opera sob criptografia. O acesso ao painel principal é restrito via **IDENTIFICATION TOKEN**.
 
 > [!IMPORTANT]
 > **A chave de acesso não é gratuita.** Para adquirir seu token e liberar o uso da ferramenta, entre em contato via TikTok:
@@ -39,52 +29,41 @@ cd GRABER-X
 pip3 install -r requirements.txt
 python3 GRABERX.py
 
-### 🦅 Arch Linux / Manjaro
-```bash
+🦅 Arch Linux / Manjaro
+Bash
+
 sudo pacman -Syu
 sudo pacman -S python git cloudflared
-git clone https://github.com/Anonymous40443/GRABER-X.git](https://github.com/Anonymous40443/GRABER-X.git
+git clone https://github.com/Anonymous40443/GRABER-X.git
 cd GRABER-X
 pip install rich flask requests
 python GRABERX.py
 
-### 📱 Termux (Android)
-```bash
-# Atualize o sistema e instale as dependências básicas
+📱 Termux (Android)
+Bash
+
 pkg update && pkg upgrade -y
 pkg install python git cloudflared -y
-
-# Clone o repositório
-git clone [https://github.com/Anonymous40443/GRABER-X.git](https://github.com/Anonymous40443/GRABER-X.git)
+git clone https://github.com/Anonymous40443/GRABER-X.git
 cd GRABER-X
-
-# Instale as bibliotecas necessárias
 pip install rich flask requests
-
-# Inicie a ferramenta
 python GRABERX.py
 
----
+🌐 COMO USAR (CLOUDFLARE TUNNEL)
 
-## 🌐 COMO USAR (CLOUDFLARE TUNNEL)
+    Inicie o Script: Escolha a opção 02 no menu para instalar/verificar o Cloudflare.
 
-Para que o link funcione externamente, o **Cloudflare** deve estar configurado corretamente no seu sistema:
+    Gere o Link: Escolha a Opção 01. O script abrirá o túnel e monitora os logs em tempo real.
 
-1. **Inicie o Script:** Escolha a opção `02` no menu principal para garantir que o Cloudflare está instalado e pronto para uso.
-2. **Gere o Link:** Ao escolher a Opção `01`, o script abrirá um túnel automático e lerá os logs em tempo real.
-3. **Estabilidade:** Se o link apresentar erro na primeira tentativa, aguarde 3 segundos. O script v12.7 limpa o cache de log automaticamente para estabilizar a conexão.
-4. **Mascaramento:** Use a opção de masking (`y`) para camuflar o link do Cloudflare com uma URL de engenharia social, tornando-a menos suspeita.
+    Estabilidade: Se der erro na primeira vez, aguarde 3 segundos. A v12.7 limpa o cache automaticamente para estabilizar a conexão.
 
----
+    Mascaramento: Digite y para camuflar a URL e torná-la menos suspeita.
 
-## 📸 PREVIEW DO SISTEMA
-*(Salve um print do seu terminal como 'preview.png' na pasta do projeto para aparecer aqui)*
-![Interface Preview](preview.png)
+📸 PREVIEW DO SISTEMA
 
----
+(Salve um print do seu terminal como 'https://www.google.com/search?q=preview.png' na pasta do projeto para aparecer aqui)
+⚠️ AVISO LEGAL
 
-## ⚠️ AVISO LEGAL
-O uso desta ferramenta para atacar alvos sem consentimento prévio é estritamente ilegal. O desenvolvedor **Anonymous40443** não se responsabiliza pelo uso indevido deste software. Uso exclusivo para fins acadêmicos e auditorias de Red Team.
+O uso desta ferramenta para atacar alvos sem consentimento prévio é estritamente ilegal. O desenvolvedor Anonymous40443 não se responsabiliza pelo uso indevido deste software. Uso exclusivo para fins acadêmicos e laboratoriais.
 
----
-**Developed by Anonymous40443** | [Github Profile](https://github.com/Anonymous40443)
+Developed by Anonymous40443 | Github Profile
