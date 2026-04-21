@@ -1,74 +1,90 @@
-# 💀 GRABER-X v12.7 - Advanced Metadata Capture 💀
+# 🦅 GRABER-X v12.7 - LEVIATHAN PROTOCOL
 
-> "Control is an illusion." - Uma ferramenta avançada de engenharia social para auditoria de redes e captura de geolocalização GPS em ambientes controlados.
+![GRABER-X Banner](https://img.shields.io/badge/SECURITY-AUDIT-red?style=for-the-badge&logo=kali-linux)
+![Status](https://img.shields.io/badge/STATUS-ACTIVE-brightgreen?style=for-the-badge)
 
----
-
-## 🚀 O que há de novo na V12.7?
-* **💎 Interface Moderna:** Nova UI baseada na biblioteca `Rich` com tabelas e painéis dinâmicos.
-* **⚡ Automação:** O script agora tenta gerenciar o túnel Cloudflare internamente.
-* **🎯 Iscas Realistas:** 5 templates profissionais (Clima, Speedtest, Ofertas, Verificação, Link Encurtado).
-* **📊 Logs Inteligentes:** Captura detalhada de IP, Dispositivo e coordenadas GPS com link direto para o Maps.
+**GRABER-X** é uma estrutura avançada de Engenharia Social e Reconhecimento de Rede projetada para testes de penetração em ambientes laboratoriais. A ferramenta automatiza a criação de túneis seguros e iscas psicológicas para captura de metadados, geolocalização precisa e identificação de dispositivos.
 
 ---
 
-## 🛠️ Instalação e Setup
+## 🛠️ O QUE HÁ DE NOVO NA v12.7?
 
-### 1️⃣ Requisitos de Sistema
-Certifique-se de ter o **Python 3.x** e o **Cloudflared** instalados no seu sistema (Kali Linux, Termux ou Windows).
+* **[NEW] Isca 05:** Otimizador de busca de conteúdo (Engenharia Social refinada).
+* **[FIX] Cloudflare Stable:** Lógica de delay integrada para evitar erros de conexão no primeiro acesso.
+* **[DEV] Device ID:** Identificação automática do modelo do smartphone/PC (User-Agent Parsing).
+* **[UI] Purple Spinner:** Interface de carregamento moderna e limpa.
+* **[URL] Ultra Masking:** Sistema de camuflagem de links integrado antes da geração.
 
-### 2️⃣ Clonando o Repositório (Sem Erros!)
-Copie e cole o comando abaixo exatamente como está:
+---
 
+## 🔐 ACESSO & LICENÇA
+
+O sistema opera sob criptografia de ponta. O acesso ao painel principal é restrito via **IDENTIFICATION TOKEN**.
+
+> [!IMPORTANT]
+> **A chave de acesso não é gratuita.** Para adquirir seu token e liberar o uso da ferramenta, entre em contato via TikTok:
+> 
+> 🔗 **Suporte Oficial:** [CLIQUE AQUI - TIKTOK](https://www.tiktok.com/@archmodel57.wha?_r=1&_t=ZS-94uzsz9ny6x)
+
+---
+
+## 🚀 INSTALAÇÃO POR SISTEMA
+
+### 🐉 Kali Linux / Debian / Ubuntu
 ```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3 git cloudflared -y
 git clone https://github.com/Anonymous40443/GRABER-X.git
 cd GRABER-X
+pip3 install -r requirements.txt
+python3 GRABERX.py
 
-###3️⃣ Instalando Dependências
-Bash
-
-pip install flask requests rich
-
-###🌐 Como Usar (Passo a Passo)
-
-Para que a ferramenta funcione para pessoas fora da sua rede Wi-Fi, você precisa de um Túnel.
-Passo A: Iniciar o Túnel (Obrigatório)
-
-Abra um novo terminal e execute o Cloudflare para criar o link público:
-Bash
-
-cloudflared tunnel --url [http://127.0.0.1:5000](http://127.0.0.1:5000) --protocol http2
-
-Mantenha este terminal aberto! Procure pelo link finalizado em .trycloudflare.com que aparecerá na tela.
-Passo B: Iniciar o GRABER-X
-
-No terminal principal (dentro da pasta do projeto), execute:
-Bash
-
+### 🦅 Arch Linux / Manjaro
+```bash
+sudo pacman -Syu
+sudo pacman -S python git cloudflared
+git clone https://github.com/Anonymous40443/GRABER-X.git](https://github.com/Anonymous40443/GRABER-X.git
+cd GRABER-X
+pip install rich flask requests
 python GRABERX.py
 
-Passo C: Configuração
+### 📱 Termux (Android)
+```bash
+# Atualize o sistema e instale as dependências básicas
+pkg update && pkg upgrade -y
+pkg install python git cloudflared -y
 
-    Selecione a opção [ 1 ] no menu.
+# Clone o repositório
+git clone [https://github.com/Anonymous40443/GRABER-X.git](https://github.com/Anonymous40443/GRABER-X.git)
+cd GRABER-X
 
-    Defina o link de destino (ex: um vídeo do YouTube ou seu TikTok).
+# Instale as bibliotecas necessárias
+pip install rich flask requests
 
-    Escolha a Isca que mais combina com seu alvo.
+# Inicie a ferramenta
+python GRABERX.py
 
-    O script enviará o link pronto para você usar.
+---
 
-📁 Estrutura do Projeto
+## 🌐 COMO USAR (CLOUDFLARE TUNNEL)
 
-    GRABERX.py: Script principal com a nova interface moderna.
+Para que o link funcione externamente, o **Cloudflare** deve estar configurado corretamente no seu sistema:
 
-    logs_graber_x.txt: Arquivo onde todas as capturas bem-sucedidas são salvas.
+1. **Inicie o Script:** Escolha a opção `02` no menu principal para garantir que o Cloudflare está instalado e pronto para uso.
+2. **Gere o Link:** Ao escolher a Opção `01`, o script abrirá um túnel automático e lerá os logs em tempo real.
+3. **Estabilidade:** Se o link apresentar erro na primeira tentativa, aguarde 3 segundos. O script v12.7 limpa o cache de log automaticamente para estabilizar a conexão.
+4. **Mascaramento:** Use a opção de masking (`y`) para camuflar o link do Cloudflare com uma URL de engenharia social, tornando-a menos suspeita.
 
-    cf_log.txt: Arquivo temporário para capturar o link do túnel.
+---
 
-👨‍💻 Créditos & Disclaimer
+## 📸 PREVIEW DO SISTEMA
+*(Salve um print do seu terminal como 'preview.png' na pasta do projeto para aparecer aqui)*
+![Interface Preview](preview.png)
 
-Desenvolvido por Anonymous40443.
+---
 
-AVISO: Este software foi criado para fins estritamente educacionais e laboratoriais. O uso desta ferramenta para fins maliciosos ou sem o consentimento do alvo é de inteira responsabilidade do usuário. O desenvolvedor não se responsabiliza por mau uso.
+## ⚠️ AVISO LEGAL
+O uso desta ferramenta para atacar alvos sem consentimento prévio é estritamente ilegal. O desenvolvedor **Anonymous40443** não se responsabiliza pelo uso indevido deste software. Uso exclusivo para fins acadêmicos e auditorias de Red Team.
 
-Siga no TikTok para atualizações
+---
+**Developed by Anonymous40443** | [Github Profile](https://github.com/Anonymous40443)
