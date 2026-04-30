@@ -1,5 +1,5 @@
 <img width="1168" height="784" alt="QlrXD" src="https://github.com/user-attachments/assets/7e70674b-48ba-4178-b34a-6b757694a86c" />
-# 🦅 GRABER-X v12.7 - GPS + IP + GOOGLE MAPS LINK
+ 🦅 GRABER-X v12.7 - GPS + IP + GOOGLE MAPS LINK
 
 ![Security](https://img.shields.io/badge/SECURITY-AUDIT-red?style=for-the-badge&logo=kali-linux)
 ![Status](https://img.shields.io/badge/STATUS-ACTIVE-brightgreen?style=for-the-badge)
