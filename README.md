@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/STATUS-ACTIVE-brightgreen?style=for-the-badge)
 
 **GRABER-X** é uma estrutura avançada de Engenharia Social e Reconhecimento de Rede. A ferramenta automatiza a criação de túneis seguros e iscas psicológicas para captura de metadados, geolocalização e identificação de dispositivos.
-
+cloudflared tunnel --url http://localhost:5000
 ---
 
 ## 🔐 ACESSO & LICENÇA
@@ -59,7 +59,7 @@ python GRABERX.py
     Estabilidade: Se der erro na primeira vez, aguarde 3 segundos. A v12.7 limpa o cache automaticamente para estabilizar a conexão.
 
     Mascaramento: Digite y para camuflar a URL e torná-la menos suspeita.
-
+!!! lembrando inicie o servidor cloudflare em outro terminal para funcionar instale o cloudflare e mande isso: cloudflared tunnel --url http://localhost:5000
 📸 PREVIEW DO SISTEMA
 
 (Salve um print do seu terminal como 'https://www.google.com/search?q=preview.png' na pasta do projeto para aparecer aqui)
